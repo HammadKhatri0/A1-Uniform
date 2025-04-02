@@ -1,0 +1,300 @@
+header {
+  background-color: #003366;
+}
+
+.main_logo {
+  width: 10%;
+}
+.main_logo img {
+  width: 70%;
+}
+
+.nav-link {
+  color: #FAFBFC;
+}
+
+.nav-link:hover {
+  color: #FAFBFC;
+}
+
+.nav-link:focus {
+  color: #FAFBFC;
+}
+
+.nav-link.show {
+  color: #FAFBFC;
+}
+
+.cir {
+  width: 17%;
+  background-color: transparent;
+}
+.cir img {
+  width: 100%;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  border: 5px solid #FAFBFC;
+}
+
+.Circle-p {
+  background: linear-gradient(90deg, hsl(0, 0%, 66%) 0%, hsl(0, 0%, 66%) 62%, hsl(210, 25%, 98%) 100%);
+}
+
+.cat-p {
+  background-color: #FAFBFC;
+}
+
+footer {
+  background-color: #e7e5e5;
+  border-top: 1px solid grey;
+}
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.upper {
+  padding: 10px 100px 0 100px;
+}
+
+.heads {
+  font-size: 0.75rem;
+  margin: 0;
+}
+
+.shoplinks {
+  width: 30%;
+}
+
+.f_links {
+  margin: 20px 0;
+  font-size: 15px;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.experience, .guarantee {
+  width: 35%;
+}
+
+.gplay {
+  width: 40%;
+}
+.gplay img {
+  width: 100%;
+}
+
+.f_icon {
+  width: 15%;
+}
+.f_icon img {
+  width: 100%;
+}
+
+.guarantee_para {
+  width: 85%;
+  margin-left: 10px;
+}
+
+.product_image > img {
+  width: 100%;
+  height: 400px;
+}
+
+svg {
+  color: goldenrod;
+}
+
+.card-text {
+  display: -webkit-box;
+  line-clamp: 3;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.contact_para {
+  font-size: 1.5rem;
+}
+
+.venue-map {
+  width: 100%;
+}
+
+.contact-form {
+  width: 50%;
+}
+
+.location-name {
+  width: 25%;
+}
+
+.btn-no-hover:hover {
+  background-color: white !important;
+  border-color: #198754 !important;
+  color: #198754 !important;
+}
+
+.card {
+  box-shadow: 1px 1px 10px #a8a8a8;
+}
+
+.prod-card:hover {
+  transform: scale(1.1);
+  transition: all ease-in 0.3s;
+  box-shadow: 1px 1px 5px #a8a8a8;
+  border: 1px solid #003366;
+}
+.prod-card:hover img {
+  border: 1px solid #a8a8a8;
+}
+.prod-card:hover a {
+  border: 1px solid #003366;
+}
+
+.about-section {
+  background-color: #f8f9fa;
+  padding: 50px 0;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.about-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.sub-heading {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.icon {
+  font-size: 2rem;
+  color: #007bff;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+main {
+  animation: slideIn 1.5s ease-out;
+}
+
+@keyframes fadeSlideIn {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+header, footer {
+  animation: fadeSlideIn 1.5s ease-out;
+}
+
+@media (max-width: 576px) {
+  .carousel-item img {
+    aspect-ratio: 12/4;
+  }
+  .contact-form {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .form {
+    width: 100%;
+  }
+  .location-icon {
+    flex-direction: column;
+    padding-left: 5rem;
+  }
+  .location-icon * {
+    margin: 0.3rem 0;
+  }
+  .upper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .experience, .guarantee, .shoplinks {
+    width: 100%;
+    text-align: center;
+  }
+  .guarantee {
+    width: 50%;
+  }
+  .gplay {
+    width: 100%;
+    justify-content: center;
+  }
+  .gplay img {
+    width: 25%;
+  }
+  .s_icons {
+    justify-content: center;
+  }
+  .footer_links {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+@media (max-width: 768px) {
+  .carousel-item img {
+    aspect-ratio: 10/4;
+  }
+  .contact-form {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .form {
+    width: 100%;
+  }
+  .location-icon {
+    flex-direction: column;
+    padding-left: 13rem;
+  }
+  .location-icon * {
+    margin: 0.3rem 0;
+  }
+  .upper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .experience, .guarantee, .shoplinks {
+    width: 100%;
+    text-align: center;
+  }
+  .guarantee {
+    width: 50%;
+  }
+  .gplay {
+    width: 100%;
+    justify-content: center;
+  }
+  .gplay img {
+    width: 25%;
+  }
+  .s_icons {
+    justify-content: center;
+  }
+  .footer_links {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}/*# sourceMappingURL=style.css.map */
